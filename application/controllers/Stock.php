@@ -46,6 +46,20 @@ class Stock extends  CI_Controller{
         }
        
     }
+    
+    public function manage_stock(){
+        $this->load->view('template/header');
+		$this->load->view('template/header_nav');
+		$this->load->view('template/dashboard');
+		$this->load->view('template/footer');
+        $data['stock_list']=$this->Stock_model->get_all_stock();
+        $this->load->view('show_stock',$data);
+    }
+    
+    public function delete_stock(){
+         
+        
+    }
 }
 
 ?>

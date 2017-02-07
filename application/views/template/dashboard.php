@@ -19,10 +19,10 @@
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Manage Stock<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="http://localhost/goldshop/index.php/stock/add_stock">Add Item</a>
+                        <a href="http://localhost/goldshop/index.php/stock/add_stock">Add New Item</a>
                     </li>
                     <li>
-                        <a href="morris.html">Morris.js Charts</a>
+                        <a href="http://localhost/goldshop/index.php/stock/manage_stock">Manage Item</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->

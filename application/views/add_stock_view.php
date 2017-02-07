@@ -2,6 +2,7 @@
 
 <body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css"/>
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
@@ -14,7 +15,7 @@
 <?php if (isset($message)) { ?>
 <CENTER><h3 style="color:green;">Data inserted successfully</h3></CENTER><br>
 <?php } ?>
-<table>
+<table  class="ui compact celled definition table">
 <tr>
 <td>Category:</td>
 <td><select class="form-control" name="Category">
@@ -47,7 +48,7 @@
 </tr>
 <tr>
 
-<td> <input type="submit" name="submit" value="Submit"/></td>
+<td colspan="2"> <center><input type="submit" name="submit" value="Submit"/></center></td>
 </tr>
     
 </table>

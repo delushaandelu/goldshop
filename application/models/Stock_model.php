@@ -13,5 +13,10 @@ class Stock_model extends CI_Model{
  
     
 }
+    public function get_all_stock(){
+        $query=$this->db->get('stock_item');
+        return $query->result();
+    
+}
 }
 ?>
