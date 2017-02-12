@@ -16,11 +16,11 @@
 <body>
    <!---->
     <div class="search">
-        <select id="myInput" onChange="myFunction()" class="form-control" placeholder="&#x26B2   Search by Category..." style="width: 320px; height: 50px"><option>Gold</option><option>Diamonds</option><option>Watches</option></select>
+        <select id="myInput" onChange="myFunction()" class="form-control" placeholder="&#x26B2   Search by Category..." style="width: 320px; height: 50px"><option selected>Select Category ..</option><option>Gold</option><option>Diamonds</option><option>Watches</option></select>
 
     </div>
     <br>
-    <table class="ui compact celled definition table stocktb" id="stocktb" border="1" cellpadding="5">
+    <table class="ui celled structured table" id="stocktb" border="1" cellpadding="5">
     <tr class="active">
         <th scope="col">Item ID</th> 
         <th scope="col">Category</th> 
@@ -42,7 +42,7 @@
         <td><?php echo $u_key->Selling; ?></td>
         <td><?php echo $u_key->Quantity; ?></td>
         <td><a href="<?php echo base_url().'index.php/stock/delete_stock/'.$u_key->Item_ID;?>">Delete</a></td>
-        <td><a href="<?php echo base_url().'index.php/stock/edit_user/'.$u_key->Item_ID;?>">Update</a></td>
+        <td><a href="<?php echo base_url().'index.php/stock/edit_stock/'.$u_key->Item_ID;?>">Update</a></td>
     </tr>
     <?php }?>
 </table>     
